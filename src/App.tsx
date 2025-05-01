@@ -35,7 +35,7 @@ export default function App() {
           {/* LEFT SIDE */}
           <div>
             <h1 className="text-4xl md:text-5xl font-extrabold mb-4 leading-tight">
-              Where Can I <span className="text-indigo-600">Poop In?</span>
+              Where Can I <span className="text-pink-600">Poop In?</span>
             </h1>
 
             <p className="text-gray-700 mb-6">
@@ -46,14 +46,14 @@ export default function App() {
               <input
                 type="email"
                 placeholder="Email address"
-                className="bg-white text-gray-900 border border-gray-300 px-4 py-2 rounded w-full max-w-sm shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                className="bg-white text-gray-900 border border-gray-300 px-4 py-2 rounded w-full max-w-sm shadow-sm focus:outline-none focus:ring-2 focus:ring-pink-500"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
               />
               <button
                 type="submit"
-                className="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-2 rounded font-semibold transition"
+                className="bg-pink-600 hover:bg-pink-700 text-white px-6 py-2 rounded font-semibold transition"
                 disabled={status === "sending"}
               >
                 {status === "sending" ? "Sending..." : "Join waitlist"}
@@ -80,7 +80,7 @@ export default function App() {
         Made with 💩 by{" "}
         <a
           href="https://dreamingecho.es"
-          className="text-indigo-600 hover:underline"
+          className="text-pink-600 hover:underline"
           target="_blank"
           rel="noopener noreferrer"
         >
